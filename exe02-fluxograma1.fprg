@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exe02-fluxograma1"/>
+        <attribute name="authors" value="RODRIGOPLETSCHARAMBU"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-11-19 08:14:00 "/>
+        <attribute name="created" value="Uk9EUklHT1BMRVRTQ0hBUkFNQlU7VVJVMjIwMDc1OzIwMjYtMTEtMTk7IjA4OjA4OjQyICI7MzI2MA=="/>
+        <attribute name="edited" value="Uk9EUklHT1BMRVRTQ0hBUkFNQlU7VVJVMjIwMDc1OzIwMjYtMTEtMTk7IjA4OjE0OjAwICI7MTszMzU5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idade1" type="Integer" array="False" size=""/>
+            <declare name="idade2" type="Integer" array="False" size=""/>
+            <if expression="idade1 &gt; idade2">
+                <then>
+                    <output expression="&quot;Mais velho &quot; &amp; idade1" newline="True"/>
+                </then>
+                <else>
+                    <if expression="idade1 &lt; idade2">
+                        <then>
+                            <output expression="&quot;Mais velho &quot; &amp; idade2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Idade igual&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
