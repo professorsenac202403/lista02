@@ -9,15 +9,16 @@ programa
 
 		se(idade <= 12){
 			escreva("A pessoa é uma criança!")
-		}
-		se(idade >= 13 e idade <= 17){
-			escreva("A pessoa é um chatoleceste!")
-		}
-		se(idade >= 18 e idade <= 65){
-			escreva("A pessoa é um adulto!")
-		}
-		se(idade > 65){
-			escreva("A pessoa é um idoso!")
+		}senao{
+			se( idade <= 17){
+				escreva("A pessoa é um chatoleceste!")
+			}senao{
+				se(idade <= 65){
+					escreva("A pessoa é um adulto!")
+				}senao{
+					escreva("A pessoa é um idoso!")
+				}
+			}
 		}
 	}
 }
@@ -26,7 +27,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 173; 
+ * @POSICAO-CURSOR = 311; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
